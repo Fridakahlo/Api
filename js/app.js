@@ -1,7 +1,10 @@
 
 (function main(){
 
- var lien ="https://swapi.co/api/people/1";
+ $('#bouton').click(function(){
+
+        var personnage = $('#personnage').val();
+        var lien =  "https://swapi.co/api/people/?search="+ personnage;
 
       $.getJSON(lien)
       .then(function(data){
@@ -18,12 +21,12 @@
 
         var template=$('#template').html();
         Mustache.parse();
-        var rendered=Mustache.render(template, {result:data});
+        var rendered=Mustache.render(template, {results:data.results});
         $("#target").append(rendered);
 
 
      });
-
+});
 })();
 
 

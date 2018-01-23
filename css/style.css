@@ -1,0 +1,16 @@
+body{
+	background-image: url(http://starwarsblog.starwars.com/wp-content/uploads/2015/04/star-wars-digital-1536x864-337112389039.jpg);
+	background-repeat: no-repeat;
+	font-size: 1.5em;
+	width: 100vw;
+	height: 100vh;
+}
+
+.texte{
+    /*margin-top: 2em;
+*/	width: 100%;
+	height: 100%;
+	display: grid;
+	align-items: center;
+	/*justify-content: center*/;
+}
