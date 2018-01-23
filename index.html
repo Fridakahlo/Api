@@ -9,20 +9,23 @@
   </head>
   
   <body>
-    
-          <ul>
-                <li class="name">Nom:</li>
-                <li class="birth_year">Date de naissance:</li>
-                <li class="height">Taille:</li>
-                <li class="mass">Poids:</li>
-                <li class="hair_color">Couleur de cheveux:</li>
-                <li class="skin_color">Couleur de peau:</li>
-                <li class="eye_color">Couleur de yeux:</li>
-                <li class="gender">Sex:</li>
+        <div id="target"></div>
+        <script id="template" type="x-tmpl-mustache">
+          {{#result}}
+            <ul>
+                <li>Nom:{{name}};</li>
+                <li>Date de naissance:{{birth_year}};</li>
+                <li>Taille:{{height}}</li>
+                <li>Poids:{{mass}}</li>
+                <li>Couleur de cheveux:{{hair_color}}</li>
+                <li>Couleur de peau:{{skin_color}}</li>
+                <li>Couleur de yeux:{{eye_color}}</li>
+                <li>Sex:{{gender}}</li>
             </ul>
-      
+           {{/result}} 
+        </script>      
 
-    
+    <script src="node_modules/mustache/mustache.js"></script>
     <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
     <script src="js/app.js"></script>
   </body>
